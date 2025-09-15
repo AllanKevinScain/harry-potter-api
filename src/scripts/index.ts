@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { db } from "../src/db";
+import { db } from "../db";
 
 (async () => {
   await db.execute(`
