@@ -5,7 +5,7 @@
     "esModuleInterop": true,
     "verbatimModuleSyntax": false,
     "target": "ES2020",
-    "types": [],
+    "types": ["node"],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
@@ -18,6 +18,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "rootDir": "src",
-    "outDir": "dist",
+    "outDir": "dist"
   }
 }

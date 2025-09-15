@@ -1,14 +1,6 @@
-import type { Database as DatabaseType } from "better-sqlite3";
-import Database from "better-sqlite3";
+import { createClient } from "@libsql/client";
 
-export const db = new Database("database.db") as DatabaseType;
-
-db.prepare(
-  `
-  CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL
-  )
-`
-).run();
+export const db = createClient({
+  url: process.env.TURSO_DB_URL as string,
+  authToken: process.env.TURSO_DB_AUTH_TOKEN as string,
+});

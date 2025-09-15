@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Harry Potter",
+    "house": "Gryffindor",
+    "age": 17,
+    "gender": "Male",
+    "blood_status": "Half-blood",
+    "role": "Student",
+    "wand": "11' Holly, Phoenix feather",
+    "patronus": "Stag",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/0/0e/HarryPotter.jpg"
+  },
+  {
+    "name": "Hermione Granger",
+    "house": "Gryffindor",
+    "age": 17,
+    "gender": "Female",
+    "blood_status": "Muggle-born",
+    "role": "Student",
+    "wand": "10.75' Vine wood, Dragon heartstring",
+    "patronus": "Otter",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/3/3b/Hermione_Granger.jpg"
+  },
+  {
+    "name": "Ron Weasley",
+    "house": "Gryffindor",
+    "age": 17,
+    "gender": "Male",
+    "blood_status": "Pure-blood",
+    "role": "Student",
+    "wand": "14' Willow, Unicorn hair",
+    "patronus": "Jack Russell Terrier",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/5/5e/Ron_Weasley.jpg"
+  },
+  {
+    "name": "Albus Dumbledore",
+    "house": "Gryffindor",
+    "age": 115,
+    "gender": "Male",
+    "blood_status": "Half-blood",
+    "role": "Headmaster",
+    "wand": "Elder Wand",
+    "patronus": "Phoenix",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/7/7e/Albus_Dumbledore.jpg"
+  },
+  {
+    "name": "Severus Snape",
+    "house": "Slytherin",
+    "age": 38,
+    "gender": "Male",
+    "blood_status": "Half-blood",
+    "role": "Professor",
+    "wand": "13.25' Ebony, Unicorn hair",
+    "patronus": "Doe",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/9/97/Severus_Snape.jpg"
+  },
+  {
+    "name": "Draco Malfoy",
+    "house": "Slytherin",
+    "age": 17,
+    "gender": "Male",
+    "blood_status": "Pure-blood",
+    "role": "Student",
+    "wand": "10' Hawthorn, Unicorn hair",
+    "patronus": "None",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/2/2f/Draco_Malfoy.jpg"
+  },
+  {
+    "name": "Luna Lovegood",
+    "house": "Ravenclaw",
+    "age": 16,
+    "gender": "Female",
+    "blood_status": "Pure-blood",
+    "role": "Student",
+    "wand": "13.25' Unknown wood, Unicorn hair",
+    "patronus": "Hare",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/d/d0/LunaLovegood.jpg"
+  },
+  {
+    "name": "Neville Longbottom",
+    "house": "Gryffindor",
+    "age": 17,
+    "gender": "Male",
+    "blood_status": "Pure-blood",
+    "role": "Student",
+    "wand": "13' Cherry, Unicorn hair",
+    "patronus": "Non-corporeal",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/e/e4/Neville_Longbottom.jpg"
+  },
+  {
+    "name": "Minerva McGonagall",
+    "house": "Gryffindor",
+    "age": 85,
+    "gender": "Female",
+    "blood_status": "Half-blood",
+    "role": "Professor",
+    "wand": "9.5' Fir, Dragon heartstring",
+    "patronus": "Cat",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/f/f9/Minerva_McGonagall.jpg"
+  },
+  {
+    "name": "Sirius Black",
+    "house": "Gryffindor",
+    "age": 36,
+    "gender": "Male",
+    "blood_status": "Pure-blood",
+    "role": "Order of the Phoenix",
+    "wand": "12.5' Hawthorn, Unicorn hair",
+    "patronus": "Dog",
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/5/50/Sirius_Black.jpg"
+  }
+]
