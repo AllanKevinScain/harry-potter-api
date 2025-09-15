@@ -1,9 +1,9 @@
 import { Router } from "express";
-import {db} from "./db";
+import { db } from "./db";
 
 const router = Router();
 
-router.get("/users", (req, res) => {
+router.get("/users", (_, res) => {
   const users = db.prepare("SELECT * FROM users").all();
   res.json(users);
 });
@@ -19,9 +19,9 @@ router.post("/users", (req, res) => {
     const stmt = db.prepare("INSERT INTO users (name, email) VALUES (?, ?)");
     const info = stmt.run(name, email);
     res.status(201).json({ id: info.lastInsertRowid, name, email });
-  } catch (err) {
+  } catch {
     res.status(500).json({ error: "Email já existe ou erro no banco." });
   }
 });
 
-export {router as AllRoutes};
+export { router as AllRoutes };
