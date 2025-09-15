@@ -1,2 +1,11 @@
-node_modules
-.env
+# Ignorar dependências do Node.js
+/node_modules
+
+# Ignorar saída do TypeScript
+/dist
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.env
+.vercel
