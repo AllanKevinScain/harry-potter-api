@@ -108,5 +108,16 @@
     "wand": "12.5' Hawthorn, Unicorn hair",
     "patronus": "Dog",
     "image_url": "https://static.wikia.nocookie.net/harrypotter/images/5/50/Sirius_Black.jpg"
+  },
+  {
+    "name": "Rubeus Hagrid",
+    "house": "Gryffindor",
+    "age": 63,
+    "gender": "Male",
+    "blood_status": "Half-giant",
+    "role": "Keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures Professor",
+    "wand": "16' Oak, broken (concealed in pink umbrella)",
+    "patronus": null,
+    "image_url": "https://static.wikia.nocookie.net/harrypotter/images/4/4e/RubeusHagrid.jpg"
   }
 ]

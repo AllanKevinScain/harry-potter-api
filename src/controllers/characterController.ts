@@ -36,14 +36,14 @@ export const createCharacter = async (req: Request, res: Response) => {
       house,
       image_url,
       name,
-      patronus,
+      patrono,
       role,
       wand,
     } = characterSchema.parse(req.body);
 
     const request = await db.execute({
       sql: `INSERT INTO character 
-            (name, house, age, gender, blood_status, role, wand, patronus, image_url)
+            (name, house, age, gender, blood_status, role, wand, patrono, image_url)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       args: [
         name,
@@ -53,7 +53,7 @@ export const createCharacter = async (req: Request, res: Response) => {
         blood_status,
         role,
         wand,
-        patronus,
+        patrono,
         image_url,
       ],
     });

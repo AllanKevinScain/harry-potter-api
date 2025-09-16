@@ -4,12 +4,13 @@ import {
   getAllCharacters,
   getCharacterById,
 } from "../controllers/characterController";
+import { handleAuthApiKey } from "../middleware";
 
 const router = Router();
 
 router.get("/", getAllCharacters);
 router.get("/:id", getCharacterById);
-router.post("/", createCharacter);
+router.post("/", handleAuthApiKey, createCharacter);
 // router.put("/:id", updateCharacter);
 // router.delete("/:id", deleteCharacter);
 

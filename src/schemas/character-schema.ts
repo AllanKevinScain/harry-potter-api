@@ -8,7 +8,7 @@ export const characterSchema = z.object({
   blood_status: z.string().min(1, "Campo obrigatório!"),
   role: z.string().min(1, "Campo obrigatório!"),
   wand: z.string().min(1, "Campo obrigatório!"),
-  patronus: z.string().min(1, "Campo obrigatório!"),
+  patrono: z.string().nullable(),
   image_url: z.string(),
 });
 

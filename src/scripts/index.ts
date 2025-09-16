@@ -12,20 +12,34 @@ import { db } from "../db";
       blood_status TEXT,
       role TEXT,
       wand TEXT,
-      patronus TEXT,
       image_url TEXT,
+      patrono TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `);
 
-  const result = await db.execute(`
-    SELECT name FROM sqlite_master WHERE type='table' AND name='character';
-  `);
+  // Comando para aapagar um campo
+  // await db.execute(`
+  //   ALTER TABLE character
+  //   DROP COLUMN patronus
+  // `);
 
-  if (result.rows.length > 0) {
-    console.log("✅ Tabela 'character' existe!");
-  } else {
-    console.log("❌ Tabela 'character' NÃO existe!");
-  }
+  // Comando para adicionar uma linha caso ela ainda nao exista
+  // const result = await db.execute(`PRAGMA table_info(character);`);
+  // const columns = result.rows.map((row) => row.name);
+  // if (!columns.includes("patrono")) {
+  //   await db.execute(`ALTER TABLE character ADD COLUMN patrono TEXT`);
+  // }
+
+  // Comando para alterar os valores de campo caso os campos existam
+  // const result = await db.execute(`PRAGMA table_info(character);`);
+  // const columns = result.rows.map((row) => row.name);
+  // if (columns.includes("patronus") && columns.includes("patrono")) {
+  //   await db.execute(`
+  //     UPDATE character SET patrono = patronus WHERE patronus IS NOT NULL;
+  //   `);
+  // }
+
+  console.log("🏁 Migrações executadas!");
 })();
