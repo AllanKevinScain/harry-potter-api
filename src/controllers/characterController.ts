@@ -68,7 +68,7 @@ export const createCharacter = async (req: Request, res: Response) => {
   }
 };
 
-/* export const updateCharacter = async (req: Request, res: Response) => {
+export const updateCharacter = async (req: Request, res: Response) => {
   try {
     const { id } = idSchema.parse(req.params);
     const character = characterSchema.partial().parse(req.body);
@@ -90,9 +90,10 @@ export const createCharacter = async (req: Request, res: Response) => {
 
     res.json({ message: "Personagem atualizado" });
   } catch (err) {
+    console.log("🚀 ~ updateCharacter ~ err:", err);
     res.status(500).json({ error: err });
   }
-}; */
+};
 
 /* export const deleteCharacter = async (req: Request, res: Response) => {
   try {
