@@ -16,7 +16,7 @@ app.use((req, _, next) => {
   next();
 });
 
-app.use("/api/characters", characterRoutes);
+app.use("/characters", characterRoutes);
 
 app.listen(process.env.PORT, () => {
   console.log(`🚀 Server running at http://localhost:${process.env.PORT}`);
